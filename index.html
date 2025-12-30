@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <title>El Rincón del Café Aromático - Café de Especialidad</title>
+    <meta name="description" content="Descubre El Rincón del Café Aromático, tu cafetería de especialidad. Disfruta de granos recién tostados, un menú delicioso y un ambiente acogedor. ¡Pide online!" />
+    <meta name="keywords" content="café, cafetería, café de especialidad, espresso, latte, tostaduría, granos de café, pedir café online" />
+    <link rel="canonical" href="https://example.com/" /> <!-- Replace with actual domain -->
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.com/" /> <!-- Replace with actual domain -->
+    <meta property="og:title" content="El Rincón del Café Aromático - Café de Especialidad" />
+    <meta property="og:description" content="Descubre El Rincón del Café Aromático, tu cafetería de especialidad. Disfruta de granos recién tostados, un menú delicioso y un ambiente acogedor." />
+    <meta property="og:image" content="https://picsum.photos/seed/coffeehero/1200/630" /> <!-- Main hero image for social sharing -->
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://example.com/" /> <!-- Replace with actual domain -->
+    <meta property="twitter:title" content="El Rincón del Café Aromático - Café de Especialidad" />
+    <meta property="twitter:description" content="Descubre El Rincón del Café Aromático, tu cafetería de especialidad. Disfruta de granos recién tostados, un menú delicioso y un ambiente acogedor." />
+    <meta property="twitter:image" content="https://picsum.photos/seed/coffeehero/1200/630" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'coffee-primary': '#6F4E37',
+              'coffee-secondary': '#A0522D',
+              'coffee-light': '#F5DEB3',
+              'coffee-dark': '#3B2F2F',
+              'cream': '#F5F5DC',
+            },
+            fontFamily: {
+              'serif': ['Georgia', 'serif'],
+              'sans': ['Helvetica', 'Arial', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(1rem);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fadeIn {
+            animation: fadeIn 0.6s ease-out forwards;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.3",
+    "recharts": "https://aistudiocdn.com/recharts@^3.2.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-cream text-coffee-dark font-sans">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
